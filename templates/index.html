@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart To-Do & Productivity Tracker</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!--App container-->
+    <div class="container">
+      <!--Header-->
+      <h1>Smart To-Do & Productivity Tracker</h1>
+      <p class="subtitle">Organize your tasks. Boost your Productivity.</p>
+
+      <!--Add Task Section-->
+      <div class="add-task">
+        <input type="text" id="taskTitle" placeholder="Enter Task Title" />
+        <input type="time" id="taskTime" />
+        <select id="taskPriority">
+          <option value="High">High Priority</option>
+          <option value="Medium">Medium Priority</option>
+          <option value="Low">Low Priority</option>
+        </select>
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+
+      <!--Productivity summary-->
+      <div class="summary">
+        <h2>Productivity Summary</h2>
+        <p>Total Tasks: <span id="totalTasks">0</span></p>
+        <p>Completed: <span id="completedTasks">0</span></p>
+        <p>Pending: <span id="pendingTasks">0</span></p>
+      </div>
+
+      <!--AI Suggestions-->
+      <div class="ai-suggestions">
+        <h2>AI Productivity Suggestions 🤖</h2>
+        <p id="aiMessage">Add tasks to get started.</p>
+      </div>
+
+      <!--Task List-->
+      <div class="task-list">
+        <h2>Your Tasks</h2>
+        <ul id="taskList">
+          <!--Tasks Will Appear Here Dynamically-->
+        </ul>
+      </div>
+    </div>
+    <!--JS File-->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

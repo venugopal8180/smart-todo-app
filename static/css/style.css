@@ -1,0 +1,158 @@
+/* ---------- Global Styles ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------- Header ---------- */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* ---------- Add Task Section ---------- */
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task input,
+.add-task select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-task button {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background: #45a049;
+}
+
+/* ---------- Summary Section ---------- */
+.summary {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.summary h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.summary p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* ---------- AI Suggestions ---------- */
+.ai-suggestions {
+    background: #eef6ff;
+    padding: 15px;
+    border-left: 5px solid #2196F3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ai-suggestions h2 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+
+/* ---------- Task List ---------- */
+.task-list h2 {
+    color: #333;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    gap: 15px;   /* 👈 space between text & buttons */
+}
+
+
+/* ---------- Task Text ---------- */
+.task-list span {
+    flex: 1;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ---------- Buttons ---------- */
+.task-list button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Complete Button */
+.task-list button:first-of-type {
+    background: #2196F3;
+    color: white;
+}
+
+.task-list button:first-of-type:hover {
+    background: #1976d2;
+}
+
+/* Delete Button */
+.task-list button:last-of-type {
+    background: #f44336;
+    color: white;
+}
+
+.task-list button:last-of-type:hover {
+    background: #d32f2f;
+}
+
+/* ---------- Task Actions (Buttons Container) ---------- */
+.task-actions {
+    display: flex;
+    gap: 8px;   /* space between Complete & Delete */
+}
