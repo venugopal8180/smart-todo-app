@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart To-Do & Productivity Tracker</title>
     <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon_io/favicon.ico') }}"
+    />
+    <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
@@ -12,9 +16,27 @@
   <body>
     <!--App container-->
     <div class="container">
+      <button id="themeToggle" style="float: right">🌙</button>
+
       <!--Header-->
       <h1>Smart To-Do & Productivity Tracker</h1>
       <p class="subtitle">Organize your tasks. Boost your Productivity.</p>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <p>Logged in as <b>{{ current_user.username }}</b></p>
+        <a
+          href="{{ url_for('logout') }}"
+          style="color: red; text-decoration: none"
+        >
+          Logout
+        </a>
+      </div>
 
       <!--Add Task Section-->
       <div class="add-task">
@@ -51,6 +73,7 @@
       </div>
     </div>
     <!--JS File-->
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
