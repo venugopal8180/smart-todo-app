@@ -1,7 +1,7 @@
 # smart-todo-app
 # 📝 Smart To-Do & Productivity Tracker
 
-🔗 Live Demo: https://smart-todo-app-1.onrender.com
+🔗 Live Demo: https://smart-todo-app-1.onrender.com/
 
 A full-stack web application to manage daily tasks with smart AI-based productivity suggestions, priority scheduling, and per-user authentication.
 
